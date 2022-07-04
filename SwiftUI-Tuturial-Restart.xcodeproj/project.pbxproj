@@ -13,6 +13,12 @@
 		717EBB6E28727D8F005364CF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717EBB5C28727D8C005364CF /* ContentView.swift */; };
 		717EBB6F28727D8F005364CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 717EBB5D28727D8F005364CF /* Assets.xcassets */; };
 		717EBB7028727D8F005364CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 717EBB5D28727D8F005364CF /* Assets.xcassets */; };
+		717EBB7B28727E5A005364CF /* success.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 717EBB7928727E5A005364CF /* success.m4a */; };
+		717EBB7C28727E5A005364CF /* chimeup.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 717EBB7A28727E5A005364CF /* chimeup.mp3 */; };
+		717EBB85287281B2005364CF /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717EBB84287281B2005364CF /* OnboardingView.swift */; };
+		717EBB87287281D3005364CF /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717EBB86287281D3005364CF /* HomeView.swift */; };
+		717EBB892872950B005364CF /* CircleGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717EBB882872950B005364CF /* CircleGroupView.swift */; };
+		717EBB8B2872DAFA005364CF /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717EBB8A2872DAFA005364CF /* AudioPlayer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +28,13 @@
 		717EBB6228727D8F005364CF /* SwiftUI-Tuturial-Restart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-Tuturial-Restart.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		717EBB6828727D8F005364CF /* SwiftUI-Tuturial-Restart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-Tuturial-Restart.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		717EBB6A28727D8F005364CF /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		717EBB7928727E5A005364CF /* success.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = success.m4a; sourceTree = "<group>"; };
+		717EBB7A28727E5A005364CF /* chimeup.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = chimeup.mp3; sourceTree = "<group>"; };
+		717EBB832872814F005364CF /* SwiftUI-Tuturial-Restart--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "SwiftUI-Tuturial-Restart--iOS--Info.plist"; sourceTree = "<group>"; };
+		717EBB84287281B2005364CF /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		717EBB86287281D3005364CF /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		717EBB882872950B005364CF /* CircleGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleGroupView.swift; sourceTree = "<group>"; };
+		717EBB8A2872DAFA005364CF /* AudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +58,7 @@
 		717EBB5528727D8C005364CF = {
 			isa = PBXGroup;
 			children = (
+				717EBB832872814F005364CF /* SwiftUI-Tuturial-Restart--iOS--Info.plist */,
 				717EBB5A28727D8C005364CF /* Shared */,
 				717EBB6928727D8F005364CF /* macOS */,
 				717EBB6328727D8F005364CF /* Products */,
@@ -54,8 +68,11 @@
 		717EBB5A28727D8C005364CF /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				717EBB8228727FEA005364CF /* Utilities */,
+				717EBB8028727FC2005364CF /* Views */,
+				717EBB7E28727E70005364CF /* sounds */,
 				717EBB5B28727D8C005364CF /* SwiftUI_Tuturial_RestartApp.swift */,
-				717EBB5C28727D8C005364CF /* ContentView.swift */,
+				717EBB7F28727FB8005364CF /* Screens */,
 				717EBB5D28727D8F005364CF /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -76,6 +93,41 @@
 				717EBB6A28727D8F005364CF /* macOS.entitlements */,
 			);
 			path = macOS;
+			sourceTree = "<group>";
+		};
+		717EBB7E28727E70005364CF /* sounds */ = {
+			isa = PBXGroup;
+			children = (
+				717EBB7A28727E5A005364CF /* chimeup.mp3 */,
+				717EBB7928727E5A005364CF /* success.m4a */,
+			);
+			path = sounds;
+			sourceTree = "<group>";
+		};
+		717EBB7F28727FB8005364CF /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				717EBB5C28727D8C005364CF /* ContentView.swift */,
+				717EBB84287281B2005364CF /* OnboardingView.swift */,
+				717EBB86287281D3005364CF /* HomeView.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		717EBB8028727FC2005364CF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				717EBB882872950B005364CF /* CircleGroupView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		717EBB8228727FEA005364CF /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				717EBB8A2872DAFA005364CF /* AudioPlayer.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,6 +209,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				717EBB7C28727E5A005364CF /* chimeup.mp3 in Resources */,
+				717EBB7B28727E5A005364CF /* success.m4a in Resources */,
 				717EBB6F28727D8F005364CF /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -176,8 +230,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				717EBB892872950B005364CF /* CircleGroupView.swift in Sources */,
+				717EBB85287281B2005364CF /* OnboardingView.swift in Sources */,
+				717EBB87287281D3005364CF /* HomeView.swift in Sources */,
 				717EBB6D28727D8F005364CF /* ContentView.swift in Sources */,
 				717EBB6B28727D8F005364CF /* SwiftUI_Tuturial_RestartApp.swift in Sources */,
+				717EBB8B2872DAFA005364CF /* AudioPlayer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,11 +370,12 @@
 				DEVELOPMENT_TEAM = P7XF7AVQX2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SwiftUI-Tuturial-Restart--iOS--Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -342,11 +401,12 @@
 				DEVELOPMENT_TEAM = P7XF7AVQX2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SwiftUI-Tuturial-Restart--iOS--Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
